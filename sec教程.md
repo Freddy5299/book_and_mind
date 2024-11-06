@@ -1,9 +1,22 @@
-- 基本命令
-  - clean -all
-  - analyze -sv12 rtl.v
-  - elaborate -top arch -parameter WIDTH 4 -create_related_covers {precondition witness}
-  - clock clk
-  - reset rst
+## sec基本
+
+- 深度优先 和广度优先
+- 可扩展性，可以使用自定义的apps和相应的property
+- unit level simulation
+  - high rtl to designers
+- 死代码 cdc 计数器溢出 fsm活锁死锁
+- 可以关闭lighting
+
+
+
+## 基本命令
+
+- clean -all
+- analyze -sv12 rtl.v
+- elaborate -top arch -parameter WIDTH 4 -create_related_covers {precondition witness}
+- clock clk
+- reset rst
+
 - debug功能
   - window
     - Visualize Window
